@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Виды поля ввода</title>
+</head>
+<body>
+<h1>Маркированный список гиперссылок</h1>
+    <ul>
+        <li><a href="http://kubsu.ru">Главная страница сайта kubsu.ru</a></li>
+        <li><a href="https://kubsu.ru">Главная сайта kubsu.ru (в протоколе HTTPS)</a></li>
+       <li><a href="https://example.com/image.jpg"><img src="C:\Users\USER\AppData\Local\Temp\30a44a3c-ca6e-4ebc-bdb8-4f8979490caf_1.zip.caf\1\image.jpg" alt="Изображение" width="100" height="100"></a></li>
+        <li><a href="/page">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="/page?id=123">Ссылка с параметром id в URL</a></li>
+        <li><a href="page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li><p>Контекстная <a href="https://www.kubsu.ru/">ссылка в тексте абзаца</a>.</p></li>
+        <li><a href="https://externalsite.com#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li>
+            <img src="https://via.placeholder.com/300" usemap="#map">
+            <map name="map">
+                <area shape="rect" coords="34,44,270,350" href="https://vuzopedia.ru" alt="Прямоугольная область">
+                <area shape="circle" coords="300,300,50" href="https://www.kubsu.ru" alt="Круглая область">
+            </map>
+        </li>
+        <li><a href="#">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a rel="nofollow" href="https://www.kubsu.ru/">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a rel="noindex" href="https://www.kubsu.ru/">Запрещенная для индексации поисковиками ссылка</a></li>
+        <ol>
+            <li><a href="https://example.com/page1" title="Описание страницы 1">Page1</a></li>
+            <li><a href="https://example.com/page2" title="Описание страницы 2">Page2</a></li>
+            <li><a href="https://example.com/page3" title="Описание страницы 3">Page3</a></li>
+        </ol>
+        <p><a href="ftp://username:password@ftp.example.com/file.txt">FTP-ссылка с авторизацией</a></p>
+    </ul>
+    <form>
+        <div>
+            <label for="text">ФИО</label>
+            <input type="text" id="text" name="text" required>
+        </div>
+
+        <div>
+            <label for="tel">Номер телефона:</label>
+            <input type="tel" id="tel" name="tel" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="date">Дата рождения</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div>
+            <p> Ваш пол</p>
+            <input type="radio" name = "radio"><a> Мужской</a>
+            <input type="radio" name = "radio"><a> Женский</a>
+        </div>
+
+        <div>
+            <label for="select">Любимый язык программирования:</label>
+            <br />
+            <select id = "select" name = "field-name-4[]" width=400 multiple>
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select>
+        </div>
+        <label>
+
+       <div>
+            <label for="textarea">Биография:</label><br/>
+            <textarea id="textarea" name="textarea" rows="5" cols="40" required></textarea><br/>
+        </div>
+
+        <div>
+            <input type="checkbox" id = "checkbox"><label for="checkbox">  с контрактом ознакомлен </label>
+        </div>
+        <div>
+            <button type="submit">Сохранить</button>
+        </div>
+    </form>
+</body>
+</html>
